@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Organizador</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body onload="inicializar()">
+   
+    <!--inserir início-->
+
+    
+<div class="container" onload="inicializar()">
+    <header><img src="https://www12.senado.leg.br/institucional/img/redessociais/youtube/image" alt="youtube-image"><h1>Organizador de Vídeos</h1></header>
+    <div id="form">
+    <form onsubmit="salvarVideo(event)">
+        <input type="hidden" id="idVideo" /> 
+        <label>Título</label> <br/>
+        <input id="titulo" class="inputer" type="text"> <br/>
+        
+        <br/>
+
+        <label>ID do Vídeo</label> <br/>
+        <input id="link" class="inputer" type="text"> <br/>
+
+        <br/>
+
+        <label>Descrição</label> <br/>
+        <input id="desc" class="inputer" type="text"> <br/>
+
+        <button class="button enviar" type="submit" >Salvar</button>
+    </form>
+    </div>
+</div>
+
+     <!-- inserir fim-->
+     <!--lista início-->
+     
+<section id="video-section">
+    <div class="container" id="listaDeVideos"></div>
+</section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
